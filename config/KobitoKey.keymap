@@ -31,6 +31,16 @@
             key-positions = <10 11>;
             bindings = <&kp TAB>;
         };
+
+        comb_back {
+            bindings = <&kp K_BACK>;
+            key-positions = <3 4>;
+        };
+
+        comb_foward {
+            bindings = <&kp K_FORWARD>;
+            key-positions = <14 13>;
+        };
     };
 
     keymap {
@@ -48,30 +58,30 @@
         layer1 {
             label = "NUMBER";
             bindings = <
-&kp N0     &kp N1     &kp N2  &kp N3     &kp BACKSPACE  &kp MINUS  &kp EXCL      &kp UP         &trans           &trans
-&kp MINUS  &kp N4     &kp N5  &kp N6     &kp EQUAL      &kp PLUS   &kp LEFT      &kp DOWN       &kp RIGHT        &trans
-&kp PLUS   &kp N7     &kp N8  &kp N9     &trans         &kp ASTRK  &kp LG(PLUS)  &kp LG(MINUS)  &kp LS(LG(N4))   &kp LG(LS(N5))
-&kp ASTRK  &kp SLASH  &trans  &kp LSHFT  &trans         &trans     &trans        &trans         &kp C_VOLUME_UP  &kp C_VOLUME_DOWN
+&kp N0     &kp N1     &kp N2  &kp N3     &kp BACKSPACE  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp UP         &kp K_BACK      &kp K_FORWARD
+&kp MINUS  &kp N4     &kp N5  &kp N6     &kp EQUAL      &kp PERIOD       &kp LEFT           &kp DOWN       &kp RIGHT       &trans
+&kp PLUS   &kp N7     &kp N8  &kp N9     &trans         &kp SLASH        &kp LG(PLUS)       &kp LG(MINUS)  &kp LS(LG(N4))  &kp LG(LS(N5))
+&kp ASTRK  &kp SLASH  &trans  &kp LSHFT  &trans         &trans           &trans             &trans         &trans          &trans
             >;
         };
 
         layer2 {
             label = "FUNCTION";
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp TILDE  &kp DQT   &kp HASH        &kp PRCNT    &kp AMPS
-&trans        &trans        &trans        &trans        &bt BT_CLR      &kp MINUS  &kp EXCL  &kp COLON       &kp AT_SIGN  &kp QUESTION
-&trans        &trans        &trans        &trans        &bt BT_CLR_ALL  &kp LPAR   &kp RPAR  &kp LBKT        &kp RBKT     &kp UNDER
-&trans        &trans        &trans        &trans        &trans          &kp DEL    &trans    &kp LS(LG(N5))  &trans       &kp SLASH
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp TILDE  &kp DQT               &kp HASH               &kp PRCNT         &kp AMPS
+&trans        &trans        &trans        &trans        &bt BT_CLR      &kp MINUS  &kp EXCL              &kp COLON              &kp AT_SIGN       &kp QUESTION
+&trans        &trans        &trans        &trans        &bt BT_CLR_ALL  &kp UNDER  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans        &trans        &trans        &trans        &trans          &kp DEL    &trans                &kp LS(LG(N5))         &trans            &kp SLASH
             >;
         };
 
         layer3 {
             label = "MOUSE";
             bindings = <
-&trans     &trans  &trans    &trans    &trans  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans
-&trans     &trans  &trans    &trans    &trans  &trans    &trans    &trans    &trans  &trans
-&trans     &trans  &trans    &trans    &trans  &trans    &trans    &trans    &trans  &trans
-&kp LSHFT  &trans  &kp LCMD  &kp LALT  &to 0   &trans    &trans    &trans    &to 0   &kp RALT
+&trans     &trans  &trans    &kp K_FORWARD  &kp K_BACK  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans
+&trans     &trans  &trans    &trans         &trans      &trans    &trans    &trans    &trans  &trans
+&trans     &trans  &trans    &trans         &trans      &trans    &trans    &trans    &trans  &trans
+&kp LSHFT  &trans  &kp LCMD  &kp LALT       &to 0       &trans    &trans    &trans    &to 0   &kp RALT
             >;
         };
     };
