@@ -31,16 +31,6 @@
             key-positions = <10 11>;
             bindings = <&kp TAB>;
         };
-
-        comb_back {
-            bindings = <&kp K_BACK>;
-            key-positions = <3 4>;
-        };
-
-        comb_foward {
-            bindings = <&kp K_FORWARD>;
-            key-positions = <14 13>;
-        };
     };
 
     keymap {
