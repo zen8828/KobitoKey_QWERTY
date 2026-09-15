@@ -68,10 +68,10 @@
         layer3 {
             label = "MOUSE";
             bindings = <
-&trans     &trans  &trans    &kp K_FORWARD  &kp K_BACK  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans
-&trans     &trans  &trans    &trans         &trans      &trans    &trans    &trans    &trans  &trans
-&trans     &trans  &trans    &trans         &trans      &trans    &trans    &trans    &trans  &trans
-&kp LSHFT  &trans  &kp LCMD  &kp LALT       &to 0       &trans    &trans    &trans    &to 0   &kp RALT
+&trans     &trans  &trans    &kp C_AC_FORWARD  &kp C_AC_BACK  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans
+&trans     &trans  &trans    &trans            &trans         &trans    &trans    &trans    &trans  &trans
+&trans     &trans  &trans    &trans            &trans         &trans    &trans    &trans    &trans  &trans
+&kp LSHFT  &trans  &kp LCMD  &kp LALT          &to 0          &trans    &trans    &trans    &to 0   &kp RALT
             >;
         };
     };
